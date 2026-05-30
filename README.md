@@ -1,4 +1,4 @@
-# Data-Structures-and-Algorithms
+# Data Structures and Algorithms
 
 This repository contains my structured and consistent practice of Data Structures and Algorithms problems from LeetCode.
 ---
