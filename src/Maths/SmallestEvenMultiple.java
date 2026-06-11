@@ -7,4 +7,8 @@ public class SmallestEvenMultiple {
             }
             return n*2;
         }
+        public static void main(String[] args) {
+            SmallestEvenMultiple sem = new SmallestEvenMultiple();
+            System.out.println(sem.smallestEvenMultiple(10));
+        }
 }
