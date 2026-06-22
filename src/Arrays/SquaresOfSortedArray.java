@@ -7,11 +7,22 @@ import static java.util.Arrays.sort;
 //977
 public class SquaresOfSortedArray {
     public int[] sortedSquares(int[] nums) {
-        int[] sqarr = new int[nums.length];
-        for(int i = 0; i<nums.length;i++){
-            sqarr[i] = nums[i] * nums[i];
+        int[] square=new int[nums.length];
+        int i=0;
+        int j=nums.length-1;
+        int idx=nums.length-1;
+        while(j>=i){
+            int left=nums[i]*nums[i];
+            int right=nums[j]*nums[j];
+            if(right>left){
+                square[idx]=right;
+                j--;
+            }else{
+                square[idx]=left;
+                i++;
+            }
+            idx--;
         }
-        Arrays.sort(sqarr);
-        return sqarr;
+        return square;
     }
 }
