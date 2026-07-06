@@ -2,22 +2,19 @@ package Maths;
 
 class ReverseIntger {
     public static int reverse(int x) {
-        int sum = 0;
-        int num = x;
-        int count = 1;
-        while (num!=0){
-            int rem = num%10;
-            count = count*10;
-            num = num/10;
+        int ans = 0;
+        while (x != 0) {
+            int rem = x % 10;
+            if (ans > Integer.MAX_VALUE / 10 ||
+                    (ans == Integer.MAX_VALUE / 10 && rem > 7))
+                return 0;
+            if (ans < Integer.MIN_VALUE / 10 ||
+                    (ans == Integer.MIN_VALUE / 10 && rem < -8))
+                return 0;
+            ans = ans * 10 + rem;
+            x /= 10;
         }
-        num = x;
-        while (num!=0){
-            int rem = num%10 ;
-            sum = sum + rem * count ;
-            num = num/10;
-            count = count/10;
-        }
-        return sum/10;
+        return ans;
     }
     public static void main(String[] args){
         int x = -120; // -21
