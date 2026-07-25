@@ -1,4 +1,4 @@
-package Arrays;
+package Kadane_Algorithm;
 //152
 class MaxProductSubarray {
     public int maxProduct(int[] nums) {
