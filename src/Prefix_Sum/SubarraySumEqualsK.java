@@ -1,7 +1,5 @@
-package SlidingWindow;
-
+package Prefix_Sum;
 import java.util.HashMap;
-
 //560
 class SubarraySumEqualsK {
     public static int subarraySum(int[] nums, int k) {

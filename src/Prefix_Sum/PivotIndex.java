@@ -1,4 +1,4 @@
-package Arrays;
+package Prefix_Sum;
 //724
 class PivotIndex {
     public int pivotIndex(int[] nums) {

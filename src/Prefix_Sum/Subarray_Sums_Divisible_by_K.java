@@ -1,4 +1,4 @@
-package SlidingWindow;
+package Prefix_Sum;
 //974
 import java.util.HashMap;
 
